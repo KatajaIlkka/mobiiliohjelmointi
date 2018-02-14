@@ -7,6 +7,7 @@ export default class App extends React.Component {
     super(props);this.state= {counter: 0, number: '', guess: '', random: Math.floor(Math.random() * 100) + 1}
   }
 
+
   makeGuess=() => {
     if( parseInt(this.state.number) > this.state.random ){
       this.setState({guess:'Your guess ' + parseInt(this.state.number) + ' is too high'});
