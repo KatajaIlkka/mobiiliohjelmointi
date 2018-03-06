@@ -1,12 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button } from 'react-native';
+import {StyleSheet, Text, View } from 'react-native';
 import {StackNavigator} from 'react-navigation';
-import Calculator from './Calculator';
-import History from './History';
+import HomeScreen from './HomeScreen';
+import SettingScreen from './SettingScreen';
 
 const MyApp = StackNavigator({
-  Calculator: {screen: Calculator},
-  History: {screen: History}
+  Home: {screen: HomeScreen},
+  Settings: {screen: SettingScreen}
 });
 
 export default class App extends React.Component{
