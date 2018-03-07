@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Button, TextInput, FlatList, Alert, Text } from 'react-native';
+import { StyleSheet, View, Button, TextInput, FlatList, Alert, Text, Linking } from 'react-native';
 import { List, ListItem } from "react-native-elements";
 
 //
@@ -57,6 +57,7 @@ export default class App extends React.Component {
         roundAvatar
         title={item.title}
         avatar={{ uri: item.thumbnail }}
+        onPress={() => Linking.openURL(item.href)}
         />
       )}
       />
